@@ -1,7 +1,8 @@
 def pairs_in_an_array(arr):
     for i in range(len(arr)-1):
         for j in range(i+1, len(arr)):
-            print(f"({arr[i]}, {arr[j]})")
+            print(f"({arr[i]}, {arr[j]})", end=", " if j != len(arr) - 1 else "")
+        print()  # for new line after each outer loop iteration
 
 
 arr = [2, 4, 6, 8, 10]
